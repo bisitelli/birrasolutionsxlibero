@@ -16,10 +16,10 @@ function App() {
   const prevStep = () => setStep(step - 1);
 
   // Kyselyn valmistuttua siirrytään tulossivulle
-  const handleComplete = (newName, newEmail, newPhone) => {
-    setName(newName);
-    setEmail(newEmail);
-    setPhone(newPhone);
+  const handleComplete = (name, email, phone) => {
+    setName(name);
+    setEmail(email);
+    setPhone(phone);
     setStep(3);
   };
 
