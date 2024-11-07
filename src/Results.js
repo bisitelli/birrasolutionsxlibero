@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 
-function Result({ answers, name, email, phone }) {
+function Result({ answers, userName, userEmail, userPhone }) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -52,9 +52,9 @@ return (
         <div className="results-form-section">
         <h2>Ota tarjous If:in syntymättömän lapsen vakuutuksesta niin voit voittaa vuoden vaipat Liberolta!</h2>
         <form className="results-form" onSubmit={handleSubmit}>
-            <input type="text" placeholder="Nimi" required value={name} onChange={(e) => setName(e.target.value)}/>
-            <input type="email" placeholder="Sähköposti" required value={email} onChange={(e) => setEmail(e.target.value)}/>
-            <input type="tel" placeholder="Puhelinnumero" required value={phone} onChange={(e) => setPhone(e.target.value)}/>
+            <input type="text" placeholder="Nimi" required value={userName} onChange={(e) => setName(e.target.value)}/>
+            <input type="email" placeholder="Sähköposti" required value={userEmail} onChange={(e) => setEmail(e.target.value)}/>
+            <input type="tel" placeholder="Puhelinnumero" required value={userPhone} onChange={(e) => setPhone(e.target.value)}/>
             <button type="submit">Osallistu</button>
             <footer className="footer">
                 Powered by Birra Solutions
